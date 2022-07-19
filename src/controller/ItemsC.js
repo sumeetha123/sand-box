@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
+import './ItemsC.css';
 
 
 function ItemsC({ setData, data }) {
@@ -34,23 +35,33 @@ function ItemsC({ setData, data }) {
 
   return (
     <div className="App">
-      <h1 className="text-2xl py-12 ">Games List</h1>
-      <ul>
+      <h1 className="text-xl py-12 games text-emerald-700 ">Games List</h1>
+      <div className="flex flex-row flex-wrap text-start justify-center ">
+      
         {relevantData && relevantData.map((game) => {
-            return <li className="games">
-                <h3>{game.title}</h3>
-                <p>{game.platform}</p>
-                <p>{game.score}</p>
-                <p>{game.genre}</p>
-                <p>{game.editors_choice}</p>
+            return <div>
+              <div className="flex flex-col my-2">
+                <div className="flex-auto w-64"><span className="font-bold">Name: </span>
+                {game.title}</div>
+                <div className="flex-auto w-64"><span className="font-bold">platform: </span>
+                {game.platform}</div>
+                <div className="flex-auto w-64"><span className="font-bold">Score: </span>
+                {game.score} </div>
+                <div className="flex-auto w-64"><span className="font-bold">Genre </span>
+                {game.genre} </div>
+                <div className="flex-auto w-64"><span className="font-bold">Editor's Choice: </span>
+                {game.editors_choice} </div>
+                </div>
+      
 
                 <br /> 
 
-            </li>
+            </div>
         }
         
         )}
-      </ul>
+      </div>
+      
     </div>
   );
 }
