@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* --------------------------------------------------------------------------- */
+
+.header {
+  padding-top: 7px;
+  height: 6vh;
+  padding-left: 1420px;
+}
+
+.head {
+  padding: 10px;
+  font-style: italic;
+  padding-left: 530px;
+  font-size: 100px;
+  background-color: rgba(143, 150, 50, 0.603);
+  color: white;
+}
+
+.hbody {
+  background-color: rgba(143, 150, 50, 0.603);
+  height: 3vh;;
+
+}
+
+.name {
+  padding-left: 50px;
+}
+
+.box {
+  padding-left: 500px;
+}
+
+.but {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(8, 79, 8);
+  color: white;
+  border: none;
+  
+  
+}
