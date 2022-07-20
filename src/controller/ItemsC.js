@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import './ItemsC.css';
 
-
+//fetching api
 function ItemsC({ setData, data }) {
   useEffect(() => {
     const getData = async () => {
@@ -32,7 +32,7 @@ function ItemsC({ setData, data }) {
     relevantData = data.filter((d) => d.visible);
   }
 
-
+  //code for getting data along with styles
   return (
     <div className="App">
       <h1 className="text-3xl py-12 games text-emerald-700  ">Games List</h1>

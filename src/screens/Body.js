@@ -28,6 +28,7 @@ function Body({ setData, data }) {
     setData(copyOfData);
   };
 
+  //code for search input
   return (
     <div className="flex space-x-6 items-center justify-center">
       <input
