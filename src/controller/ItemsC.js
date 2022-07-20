@@ -35,22 +35,22 @@ function ItemsC({ setData, data }) {
 
   return (
     <div className="App">
-      <h1 className="text-xl py-12 games text-emerald-700 ">Games List</h1>
-      <div className="flex flex-row flex-wrap text-start justify-center ">
+      <h1 className="text-3xl py-12 games text-emerald-700  ">Games List</h1>
+      <div className="grid grid-cols-3 text-start  justify-center games">
       
         {relevantData && relevantData.map((game) => {
             return <div>
-              <div className="flex flex-col my-2">
-                <div className="flex-auto w-64"><span className="font-bold">Name: </span>
-                {game.title}</div>
-                <div className="flex-auto w-64"><span className="font-bold">platform: </span>
-                {game.platform}</div>
-                <div className="flex-auto w-64"><span className="font-bold">Score: </span>
-                {game.score} </div>
-                <div className="flex-auto w-64"><span className="font-bold">Genre </span>
-                {game.genre} </div>
-                <div className="flex-auto w-64"><span className="font-bold">Editor's Choice: </span>
-                {game.editors_choice} </div>
+              <div className="grid grid-cols-1 ml-12 mr-12 p-4 bg-emerald-500 rounded-lg my-2 justify-center shadow-lg shadow-emerald-600/50">
+                <div className="grid-auto w-64"><span className="font-bold">Name: </span><div className="text-white">
+                {game.title}</div></div>
+                <div className="grid-auto w-64"><span className="font-bold">platform: </span><div className="text-white">
+                {game.platform}</div></div>
+                <div className="grid-auto w-64"><span className="font-bold">Score: </span><div className="text-white">
+                {game.score} </div></div>
+                <div className="grid-auto w-64"><span className="font-bold">Genre </span><div className="text-white">
+                {game.genre}</div></div>
+                <div className="grid-auto w-64"><span className="font-bold">Editor's Choice: </span> <div className="text-white">
+                {game.editors_choice} </div></div>
                 </div>
       
 
